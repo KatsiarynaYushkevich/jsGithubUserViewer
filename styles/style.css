@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_container {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1096px;
+  margin: auto;
+}
+
+.form_wrapper {
+  width: 100%;
+  background-color: #333333;
+  height: 10%;
+}
+
+.find_form {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+}
+.find_form input {
+  min-height: 30px;
+  border-radius: 2px;
+  padding: 2px;
+  font-family: Roboto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.submit_btn {
+  background-color: rgb(248, 219, 115);
+}
+
+.user_wrapper {
+  width: 100%;
+  background-color: rgb(248, 219, 115);
+  height: 90%;
+  padding: 30px;
+}
+
+.user {
+  font-family: Roboto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.user img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 50%;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}/*# sourceMappingURL=style.css.map */

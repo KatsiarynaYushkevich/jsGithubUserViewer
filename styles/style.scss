@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$main_text_color: #333333;
+$sub_text_color: #fff;
+$main_font_family: Roboto;
+
+@mixin main_text_style(
+  $f_size: 16px,
+  $f_weight: 400,
+  $color: $main_text_color
+) {
+  font-family: $main_font_family;
+  color: $color;
+  font-size: $f_size;
+  font-weight: $f_weight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_container{
+height: 100vh;
+}
+
+.container{
+  max-width: 1096px;
+  margin: auto;
+}
+
+.form_wrapper{
+  width: 100%;
+  background-color: #333333;
+ height: 10%;
+}
+.find_form{
+ display: flex;
+ padding: 20px;
+ gap:15px;
+
+ input{
+  min-height: 30px;
+  border-radius: 2px;
+  padding: 2px;
+  @include main_text_style();
+ }
+}
+
+.submit_btn{
+background-color:rgb(248, 219, 115);
+}
+.user_wrapper{
+  width: 100%;
+  background-color: rgb(248, 219, 115);
+  height: 90%;
+  padding: 30px;
+}
+
+.user{
+  @include main_text_style(20px);
+  padding: 20px;
+  display: flex;
+  align-items:center;
+  gap:50px;
+  img{
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+  }
+}
+
+.user_info{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
